@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --background :#180f2eed ;
+    --green-btn : #3fc13f;
+    --red-btn : #e93939 ;
+    --yellow-btn : #e7d72d ;
+}
+body{
+    background-color: var(--background);
+    color: white;
+    height: 100vh;
+}
+header{
+    width: 100%;
+    padding: 2.5rem;
+    
+}
+header h1{
+    font-size: 2.6rem; 
+    text-align: center;
+}
+section > .container{
+    padding: 2.2rem;
+}
+section > .container > form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+form > div{
+    min-width: 300px;
+    max-width: 600px;  
+}
+form > div > label{
+    font-size: 1.6rem;
+    margin-bottom: 30px;
+
+}
+form > div > input{
+    padding: 0.5rem 0.8rem;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    margin-left: 15px;
+}
+form > .mail{
+    margin-left: 7%;
+}
+
+
+input[id="phone"]::-webkit-inner-spin-button,
+input[id="phone"]::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+input:focus-visible{
+    border: 2px solid var(--green-btn);
+    outline: 2px solid var(--green-btn);
+}
+form > input{
+    width: 160px;
+    padding: 0.5rem 1rem;
+    border-radius: 18px;
+    text-align: center;
+    font-size: 1.4rem;
+    margin-top: 22px;
+    background-color: var(--green-btn);
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+section > .wrapper{
+    padding: 2.2rem;
+    font-size: 1.3rem;
+}
+.wrapper .table{
+    margin-left: auto;
+    margin-right: auto;
+    table-layout:auto;
+    
+}
+th,td{
+    padding: 1.2rem;
+    text-align: center;
+    outline: 2px solid white;
+    /* border: 2px solid white;
+    border-collapse: collapse; */
+    /* outline:2px solid white; */
+       
+}
+.deletebtn{
+    font-size: 1rem;
+    padding: 7px;
+    background-color: rgb(245, 54, 54);
+    color: white;
+    width: 4.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    pointer-events: visible;
+}
+.table-row.delete{
+    display: none;
+    transform: scale(0);
+    transform-style: preserve-3d;
+    transform-origin: bottom;
+    transition: all 3s ease-in-out;
+    
+}
+
+/* thead > tr > th:first-child,
+.tbody > .table-row > td:first-child{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+thead > tr > th:last-child,
+.tbody > .table-row > td:last-child{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+} */
+
+
+
+   
+   
+
+
